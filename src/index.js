@@ -37,10 +37,19 @@ function initialPageLoad() {
   contentDiv.appendChild(nav);
 }
 
+function clearPage() {
+  while (contentDiv.firstChild) {
+    contentDiv.removeChild(contentDiv.lastChild);
+  }
+}
+
 initialPageLoad();
 
 const homePage = document.querySelector("#home-page");
 const menuPage = document.querySelector("#menu-page");
 const aboutPage = document.querySelector("#about-page");
 
-homePage.addEventListener("click", loadHomePage);
+homePage.addEventListener("click", e => {
+  clearPage();
+  loadHomePage();
+});
