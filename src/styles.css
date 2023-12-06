@@ -16,13 +16,31 @@ html {
 body {
   font-size: 1.6rem;
   height: 100svh;
+  background: url("./pizza.jpg");
+  background-size: cover;
+}
+
+nav {
+  flex: 1;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35vw;
+  margin: auto;
+  gap: 5px;
+  background-color: rgb(35, 243, 174, 0.7);
+  margin-top: 2rem;
 }
 
 ul {
   display: flex;
   list-style: none;
   justify-content: center;
-  background-color: aquamarine;
+  background-color: rgb(35, 243, 174);
   font-weight: bold;
   gap: 3rem;
   padding: 2rem;
@@ -34,4 +52,28 @@ a {
 
 a:hover {
   color: darkorchid;
+}
+
+header {
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
+  color: rgb(113, 8, 165);
+}
+
+img {
+  width: 50vh;
+  border-radius: 20%;
+}
+
+p {
+  width: 30vw;
+  font-size: 2.2rem;
+  font-style: italic;
+  border: 5px solid black;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
 }

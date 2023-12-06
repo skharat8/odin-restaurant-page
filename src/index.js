@@ -44,6 +44,7 @@ function clearPage() {
 }
 
 initialPageLoad();
+loadHomePage();
 
 const homePage = document.querySelector("#home-page");
 const menuPage = document.querySelector("#menu-page");
@@ -51,5 +52,6 @@ const aboutPage = document.querySelector("#about-page");
 
 homePage.addEventListener("click", e => {
   clearPage();
+  initialPageLoad();
   loadHomePage();
 });
